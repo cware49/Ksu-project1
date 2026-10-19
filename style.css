@@ -1,0 +1,99 @@
+/* ==========================================
+   IT 3203 - Milestone #1 Stylesheet
+   ========================================== */
+
+/* 1. Global / Element Selectors (Selector Type 1) */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    background-color: #f4f4f9;
+}
+
+h1, h2, h3 {
+    color: #003366;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+/* Hover Effect on Links */
+a:hover {
+    text-decoration: underline;
+    color: #003399;
+}
+
+/* 2. Navigation Header (Flexbox Layout) */
+header {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 15px 20px;
+}
+
+header h1 {
+    color: #ffffff;
+    margin: 0 0 10px 0;
+}
+
+/* Class Selectors (Selector Type 2) */
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flexbox implementation */
+    gap: 15px;
+}
+
+.nav-menu a {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* 3. Main Content Area (CSS Grid Layout) */
+.main-container {
+    display: grid; /* CSS Grid implementation */
+    grid-template-columns: 1fr;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+
+/* 4. ID Selector (Selector Type 3) */
+#page-title {
+    border-bottom: 2px solid #003366;
+    padding-bottom: 5px;
+}
+
+/* Tables Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+th, td {
+    border: 1px solid #cccccc;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #003366;
+    color: #ffffff;
+}
+
+/* Shared Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 0.9em;
+    background-color: #e0e0e0;
+}
