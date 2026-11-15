@@ -1,1 +1,289 @@
+<!DOCTYPE html>
 
+<html lang="en">
+
+<head>
+
+    <!-- Page settings and responsive display -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Development Quiz</title>
+
+    <!-- Connects the shared CSS stylesheet -->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Website header and navigation -->
+
+    <header>
+
+        <h1>Web Development Research</h1>
+
+        <nav>
+
+            <ul class="nav-menu">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="topic1.html">Frontend Technologies</a></li>
+
+                <li><a href="topic2.html">Responsive Design</a></li>
+
+                <li><a href="concepts.html">Key Concepts</a></li>
+
+                <li><a href="resources.html">Resources</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="quiz.html">Quiz</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- Main quiz content -->
+
+    <main class="quiz-container">
+
+        <h2 id="page-title">Web Development Knowledge Quiz</h2>
+
+        <p>
+
+            Test your understanding of HTML, CSS, JavaScript,
+
+            and responsive web design.
+
+        </p>
+
+        <p>
+
+            You have 10 minutes to complete all 10 questions.
+
+            Your results will appear after submission.
+
+        </p>
+
+        <!-- Countdown timer -->
+
+        <div id="timer">Time Remaining: 10:00</div>
+
+        <form id="quiz-form">
+
+            <!-- Question 1: Fill in the blank -->
+
+            <div class="quiz-question">
+
+                <h3>Question 1: Fill in the Blank</h3>
+
+                <p>
+
+                    The language used to structure content on
+
+                    webpages is ______.
+
+                </p>
+
+                <input type="text" id="q1" placeholder="Your answer">
+
+            </div>
+
+            <!-- Question 2: Fill in the blank -->
+
+            <div class="quiz-question">
+
+                <h3>Question 2: Fill in the Blank</h3>
+
+                <p>
+
+                    CSS stands for Cascading ______ Sheets.
+
+                </p>
+
+                <input type="text" id="q2" placeholder="Your answer">
+
+            </div>
+
+            <!-- Question 3: Multiple Choice -->
+
+            <div class="quiz-question">
+
+                <h3>Question 3: Multiple Choice</h3>
+
+                <p>Which language adds interactivity to websites?</p>
+
+                <label><input type="radio" name="q3" value="HTML"> HTML</label>
+
+                <label><input type="radio" name="q3" value="CSS"> CSS</label>
+
+                <label><input type="radio" name="q3" value="JavaScript"> JavaScript</label>
+
+                <label><input type="radio" name="q3" value="SQL"> SQL</label>
+
+            </div>
+
+            <!-- Question 4: Multiple Choice -->
+
+            <div class="quiz-question">
+
+                <h3>Question 4: Multiple Choice</h3>
+
+                <p>Which CSS property changes the text color?</p>
+
+                <label><input type="radio" name="q4" value="background"> background</label>
+
+                <label><input type="radio" name="q4" value="color"> color</label>
+
+                <label><input type="radio" name="q4" value="font-size"> font-size</label>
+
+                <label><input type="radio" name="q4" value="margin"> margin</label>
+
+            </div>
+
+            <!-- Question 5: Multiple Choice -->
+
+            <div class="quiz-question">
+
+                <h3>Question 5: Multiple Choice</h3>
+
+                <p>What is the primary purpose of responsive web design?</p>
+
+                <label><input type="radio" name="q5" value="speed"> To increase internet speed</label>
+
+                <label><input type="radio" name="q5" value="adapt"> To adapt websites to different screen sizes</label>
+
+                <label><input type="radio" name="q5" value="security"> To protect passwords</label>
+
+                <label><input type="radio" name="q5" value="database"> To create databases</label>
+
+            </div>
+
+            <!-- Question 6: Multiple Selection -->
+
+            <div class="quiz-question">
+
+                <h3>Question 6: Select All That Apply</h3>
+
+                <p>Which of the following are frontend technologies?</p>
+
+                <label><input type="checkbox" name="q6" value="HTML"> HTML</label>
+
+                <label><input type="checkbox" name="q6" value="CSS"> CSS</label>
+
+                <label><input type="checkbox" name="q6" value="JavaScript"> JavaScript</label>
+
+                <label><input type="checkbox" name="q6" value="Python"> Python</label>
+
+            </div>
+
+            <!-- Question 7: True or False -->
+
+            <div class="quiz-question">
+
+                <h3>Question 7: True or False</h3>
+
+                <p>HTML is a programming language.</p>
+
+                <label><input type="radio" name="q7" value="True"> True</label>
+
+                <label><input type="radio" name="q7" value="False"> False</label>
+
+            </div>
+
+            <!-- Question 8: True or False -->
+
+            <div class="quiz-question">
+
+                <h3>Question 8: True or False</h3>
+
+                <p>CSS Grid can organize content into rows and columns.</p>
+
+                <label><input type="radio" name="q8" value="True"> True</label>
+
+                <label><input type="radio" name="q8" value="False"> False</label>
+
+            </div>
+
+            <!-- Question 9: True or False -->
+
+            <div class="quiz-question">
+
+                <h3>Question 9: True or False</h3>
+
+                <p>JavaScript can respond to user actions on a webpage.</p>
+
+                <label><input type="radio" name="q9" value="True"> True</label>
+
+                <label><input type="radio" name="q9" value="False"> False</label>
+
+            </div>
+
+            <!-- Question 10: True or False -->
+
+            <div class="quiz-question">
+
+                <h3>Question 10: True or False</h3>
+
+                <p>Media queries can help create responsive websites.</p>
+
+                <label><input type="radio" name="q10" value="True"> True</label>
+
+                <label><input type="radio" name="q10" value="False"> False</label>
+
+            </div>
+
+            <!-- Quiz buttons -->
+
+            <button type="submit" class="quiz-button">
+
+                Submit Quiz
+
+            </button>
+
+            <button type="reset" class="quiz-button">
+
+                Reset Quiz
+
+            </button>
+
+        </form>
+
+        <!-- Results will appear here after submission -->
+
+        <div id="quiz-results" hidden></div>
+
+    </main>
+
+    <!-- Class project footer -->
+
+    <footer>
+
+        <p>
+
+            This is a class project for
+
+            <a href="https://ksuweb.github.io/IT3203/" target="_blank">
+
+                IT 3203 Web Development
+
+            </a>.
+
+        </p>
+
+    </footer>
+
+    <!-- Connects the JavaScript quiz functionality -->
+
+    <script src="js/quiz.js"></script>
+
+</body>
+
+</html>
